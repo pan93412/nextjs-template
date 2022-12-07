@@ -7,19 +7,21 @@ import * as Popover from "@radix-ui/react-popover";
  */
 export default function Page() {
   return (
-    <main className="flex flex-col gap-5 Main lg:flex-row lg:gap-20">
+    <>
       <h1 className="text-2xl">Hi.</h1>
       <p>Welcome to this template.</p>
 
       <Popover.Root>
-        <Popover.Trigger className="t">More info</Popover.Trigger>
+        <Popover.Trigger className="px-4 mt-2 rounded bg-neutral-700 first-letter:py-1">
+          More info
+        </Popover.Trigger>
         <Popover.Portal>
-          <Popover.Content>
+          <Popover.Content className="p-4 mt-2 rounded bg-neutral-300 text-neutral-800">
             Some more info…
             <Popover.Arrow />
           </Popover.Content>
         </Popover.Portal>
       </Popover.Root>
-    </main>
+    </>
   );
 }

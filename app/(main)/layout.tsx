@@ -9,5 +9,5 @@ export default function MainAppLayout({
    */
   children: React.ReactNode;
 }) {
-  return <main className="px-8 py-4">{children}</main>;
+  return <main className="px-12 py-8 leading-relaxed">{children}</main>;
 }
